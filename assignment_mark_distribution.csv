@@ -1,0 +1,11 @@
+Question,Task,Marks
+1,Data understanding (variable description),8
+2,Unique unigrams by specialty,10
+3,Unique bigrams by specialty,10
+4,Unique sentences by specialty,10
+5,Lemmatizer suitability for medical text,10
+6,Interpretation of lemma frequency plot,12
+7,Modify plot: Surgery vs. Radiology,10
+8,Top lemmas: Standouts and reasoning,10
+9,Extract example of 'top lemma',5
+10,"Repeat with 6-topic LDA, interpret",15

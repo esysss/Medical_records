@@ -1,0 +1,1 @@
+"0","analysis.data %>% dplyr::select(medical_specialty, transcription) %>% dplyr::filter(stringr::str_detect(transcription, 'steri strips')) %>% dplyr::slice(1)"

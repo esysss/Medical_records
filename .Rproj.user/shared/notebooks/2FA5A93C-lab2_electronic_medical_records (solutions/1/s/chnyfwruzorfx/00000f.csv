@@ -1,0 +1,2 @@
+"0","emr.lda <- topicmodels::LDA(emr.dcm, k=5, control=list(seed=42))"
+"0","emr.topics <- tidytext::tidy(emr.lda, matrix='beta')"

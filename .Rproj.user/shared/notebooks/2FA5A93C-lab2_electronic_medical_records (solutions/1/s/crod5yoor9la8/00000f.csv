@@ -1,0 +1,7 @@
+"0","lemma.freq <- lemmatized.data %>% "
+"0","  dplyr::count(medical_specialty, lemma) %>%"
+"0","  dplyr::group_by(medical_specialty) %>% "
+"0","  dplyr::mutate(proportion = n / sum(n)) %>%"
+"0","  tidyr::pivot_wider(names_from = medical_specialty, values_from = proportion) %>%"
+"0","  tidyr::pivot_longer(`Surgery`:`Radiology`,"
+"0","               names_to = ""medical_specialty"", values_to = ""proportion"")"

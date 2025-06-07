@@ -1,0 +1,10 @@
+"0","analysis.data <- filtered.data %>%"
+"0","  unnest_tokens(word, transcription) %>%"
+"0","  mutate(word = str_replace_all(word, ""[^[:alnum:]]"", """")) %>%"
+"0","  filter(!str_detect(word, ""[0-9]"")) %>%"
+"0","  anti_join(stop_words) %>%"
+"0","  group_by(note_id) %>%"
+"0","  summarise(transcription = paste(word, collapse = "" "")) %>%"
+"0","  left_join(select(filtered.data, -transcription), by = ""note_id"")"
+"2","[38;5;255mJoining with `by = join_by(word)`[39m
+"

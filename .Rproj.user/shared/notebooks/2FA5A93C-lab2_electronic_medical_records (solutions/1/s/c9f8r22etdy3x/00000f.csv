@@ -1,0 +1,7 @@
+"0",""
+"0","specialty_gamma %>%"
+"0","  dplyr::mutate(medical_specialty = reorder(medical_specialty, gamma * topic)) %>%"
+"0","  ggplot2::ggplot(ggplot2::aes(factor(topic), gamma)) +"
+"0","  ggplot2::geom_boxplot() +"
+"0","  ggplot2::facet_wrap(~ medical_specialty) +"
+"0","  ggplot2::labs(x = ""topic"", y = expression(gamma))"

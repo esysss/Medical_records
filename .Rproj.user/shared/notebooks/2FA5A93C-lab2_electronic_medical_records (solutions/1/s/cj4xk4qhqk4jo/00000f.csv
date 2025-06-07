@@ -1,0 +1,1 @@
+"0","tokenized.data.unigram <- analysis.data %>% tidytext::unnest_tokens(word, transcription, to_lower=TRUE)"

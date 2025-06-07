@@ -1,0 +1,8 @@
+"0","lemma.counts <- lemmatized.data %>% dplyr::count(medical_specialty, lemma)"
+"0","total.counts <- lemma.counts %>% "
+"0","                      dplyr::group_by(medical_specialty) %>% "
+"0","                      dplyr::summarise(total=sum(n))"
+"0",""
+"0","all.counts <- dplyr::left_join(lemma.counts, total.counts)"
+"2","[38;5;255mJoining with `by = join_by(medical_specialty)`[39m
+"

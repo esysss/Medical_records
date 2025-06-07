@@ -1,0 +1,11 @@
+"0","specialty_gamma <- tidytext::tidy(emr.lda, matrix='gamma')"
+"0",""
+"0","# we need to join in the specialty from the note_id"
+"0","note_id_specialty_mapping <- lemmatized.data %>%"
+"0","  dplyr::mutate(document=as.character(note_id)) %>% "
+"0","  dplyr::select(document, medical_specialty) %>% "
+"0","  dplyr::distinct()"
+"0",""
+"0","specialty_gamma <- dplyr::left_join(specialty_gamma, note_id_specialty_mapping)"
+"2","[38;5;255mJoining with `by = join_by(document)`[39m
+"

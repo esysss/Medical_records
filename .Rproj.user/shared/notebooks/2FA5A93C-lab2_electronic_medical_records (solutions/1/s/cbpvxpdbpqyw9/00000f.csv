@@ -1,0 +1,4 @@
+"0","analysis.data %>%"
+"0","  select(medical_specialty, transcription) %>%"
+"0","  filter(str_detect(transcription, ""arthroscopic"")) %>%"
+"0","  slice(1)"

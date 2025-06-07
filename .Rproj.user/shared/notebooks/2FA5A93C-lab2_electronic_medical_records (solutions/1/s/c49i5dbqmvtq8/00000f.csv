@@ -1,0 +1,1 @@
+"0","lemmatized.data <- tokenized.data %>% dplyr::mutate(lemma=textstem::lemmatize_words(ngram))"

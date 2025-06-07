@@ -1,0 +1,1 @@
+"0","all.counts.tfidf <- tidytext::bind_tf_idf(all.counts, lemma, medical_specialty, n) "

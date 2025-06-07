@@ -1,0 +1,10 @@
+"0",""
+"0","lemma.counts <- lemmatized.data %>% dplyr::count(note_id, lemma)"
+"0","total.counts <- lemma.counts %>% "
+"0","                      dplyr::group_by(note_id) %>% "
+"0","                      dplyr::summarise(total=sum(n))"
+"0",""
+"0","all.counts <- dplyr::left_join(lemma.counts, total.counts)"
+"2","[38;5;255mJoining with `by = join_by(note_id)`[39m
+"
+"0","emr.dcm <- all.counts %>% tidytext::cast_dtm(note_id, lemma, n)"
